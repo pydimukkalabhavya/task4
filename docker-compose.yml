@@ -11,4 +11,4 @@ build:
 context: . 
 dockerfile: Dockerfile 
 depends_on: 
-- sonar-server It was originally published on https://www.apriorit.com/
+- sonar-server
