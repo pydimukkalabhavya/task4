@@ -3,6 +3,6 @@ COPY . /dist
 RUN cd /dist && mvn clean install 
 WORKDIR /dist/ 
 CMD sleep 150 && mvn sonar:sonar 
--Dsonar.host.url=http://sonar-server:9125  
+-Dsonar.host.url=http://10.11.0.175:9125  
 -Dsonar.language=java -Dsonar.login=admin 
 -Dsonar.password=admin -Dsonar. projectKey=sonarbackend 
