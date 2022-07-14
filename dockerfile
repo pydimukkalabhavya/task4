@@ -1,6 +1,5 @@
 FROM  maven:3.6.3-openjdk-8 
 WORKDIR /
-COPY target/my-app-1.0-SNAPSHOT.jar my-app-1.0-SNAPSHOT.jar
 EXPOSE 9125
 ENTRYPOINT ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
 CMD sleep 150 && mvn sonar:sonar 
